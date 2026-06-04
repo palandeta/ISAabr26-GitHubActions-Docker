@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+    <style>
+        /* CSS básico moderno */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            padding: 2.5rem;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #764ba2;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        .flask-badge {
+            background-color: #000000;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin: 1rem 0;
+            font-family: monospace;
+        }
+
+        .info {
+            background-color: #f7fafc;
+            padding: 1rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+            text-align: left;
+            border-left: 4px solid #764ba2;
+        }
+
+        .info p {
+            margin: 0.5rem 0;
+            color: #4a5568;
+        }
+
+        .port-number {
+            font-family: monospace;
+            font-size: 1.2rem;
+            background: #2d3748;
+            color: #68d391;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ titulo }}</h1>
+        <div class="flask-badge">
+            🐍 Flask + Python
+        </div>
+        
+        <div class="info">
+            <p>✅ Servidor web desarrollado con <strong>Flask</strong> (microframework de Python).</p>
+            <p>🌐 Puerto de escucha: <span class="port-number">5000</span></p>
+            <p>👨‍💻 Proyecto creado por <strong>Pablo L</strong>.</p>
+            <p>🚀 Esta página se sirve dinámicamente desde el backend Flask.</p>
+        </div>
+
+        <p style="color: #4a5568; margin-top: 1rem;">
+            <span style="font-size: 1.2rem;">⚡</span> 
+            HTML + CSS básico, con diseño responsivo y gradiente moderno.
+        </p>
+        
+        <footer>
+            Pablo L • Python con Flask • Puerto 5000
+        </footer>
+    </div>
+</body>
+</html>
